@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tony Ben Muriithi | Events & Social Media Manager | Portfolio for Jikoni Studio</title>
 <style>
@@ -35,17 +36,23 @@ ol.steps li:before{content:counter(s);position:absolute;left:14px;top:12px;width
 .flow span+span:before{content:"→ ";color:var(--accent)}
 .btn{display:inline-block;margin:8px 8px 0 0;padding:11px 18px;border-radius:8px;background:var(--accent);color:var(--bg);text-decoration:none;font:600 .95rem system-ui,sans-serif}
 .btn.alt{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.portrait{width:132px;height:132px;border-radius:50%;object-fit:cover;border:3px solid var(--line);display:block;margin:0 0 18px;background:var(--tint)}
+.gallery{columns:240px;column-gap:12px;margin-top:14px}
+.gallery figure{margin:0 0 12px;break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.gallery img{width:100%;height:auto;display:block;background:var(--tint)}
+.gallery figcaption{padding:8px 12px;font:.85rem/1.4 system-ui,sans-serif;color:var(--muted)}
 footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem}
 </style>
 </head>
 <body>
 <div class="w">
 <header>
+  <img class="portrait" src="images/tony-portrait.jpg" alt="Portrait of Tony Ben Muriithi" width="132" height="132" onerror="this.remove()">
   <div class="eyebrow">Application portfolio · Jikoni Studio</div>
   <h1>Tony Ben Muriithi</h1>
   <p class="sub">Applying for <b>Events &amp; Social Media Manager</b>. A hospitality-minded developer with a plan for Jikoni's next 60 days, built from what is already on your calendar.</p>
   <a class="btn" href="https://wa.me/254702889103?text=Hi%20Tony%2C%20I%20saw%20your%20portfolio">WhatsApp me</a>
-  <a class="btn alt" href="mailto:bentony424@gmail.com">Email</a>
+  <a class="btn alt mail" href="mailto:bentony424@gmail.com">Email</a>
 </header>
 
 <section>
@@ -110,6 +117,21 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem}
 </section>
 
 <section>
+  <h2>Through my lens</h2>
+  <p class="note">Tables, plates and places I have photographed. The eye for detail is the same one I would bring to Jikoni's events and content.</p>
+  <div class="gallery">
+    <figure><img src="images/table-pizza-caprese.jpg" alt="Dinner table set for four with a pizza, a caprese platter and plates painted with a cheetah, an elephant and a rhino" width="1125" height="844" loading="lazy"><figcaption>A table laid for four: pizza, caprese and safari-print plates.</figcaption></figure>
+    <figure><img src="images/ice-platter.jpg" alt="Block of ice set with edible flowers and a fruit sorbet, served on a lettuce leaf" width="1050" height="1400" loading="lazy"><figcaption>Presentation with a sense of occasion: an ice-block platter set with edible flowers.</figcaption></figure>
+    <figure><img src="images/tagliatelle.jpg" alt="Bowl of tagliatelle with meat ragu and a herb garnish" width="1125" height="1180" loading="lazy"><figcaption>Plating that is simple, clean and appetising.</figcaption></figure>
+    <figure><img src="images/takawiri-lake.jpg" alt="Palm trees, a beach and a signboard reading Takawiri Island Resort, Lake Victoria, Kenya" width="1125" height="844" loading="lazy"><figcaption>Lake Victoria at Takawiri Island: the setting guests remember.</figcaption></figure>
+    <figure><img src="images/elephant.jpg" alt="African elephant with long tusks walking through grassland under a bright sky" width="1125" height="843" loading="lazy"><figcaption>Safari photography: patience, light and timing.</figcaption></figure>
+    <figure><img src="images/giraffe.jpg" alt="Reticulated giraffe reaching into an acacia tree with hills behind" width="1083" height="1400" loading="lazy"><figcaption>A reticulated giraffe browsing an acacia.</figcaption></figure>
+    <figure><img src="images/valley-sunset.jpg" alt="Sunset light over a rocky valley with acacia bushes in the foreground" width="1125" height="844" loading="lazy"><figcaption>Valley at dusk: golden-hour light over the hills.</figcaption></figure>
+    <figure><img src="images/boat-bow-bridge.jpg" alt="View from the bow of a blue-green wooden boat towards a bridge across the lake" width="1125" height="843" loading="lazy"><figcaption>From the bow of a fishing boat, heading for the bridge.</figcaption></figure>
+  </div>
+</section>
+
+<section>
   <h2>Background</h2>
   <p><b>Ololo Safari Lodge</b> · Driver Guide (2021–2023)<br>
   <b>Royal African Safaris</b> · IT Technician, with Cultiva Farm store and restaurant support (2018–2021)<br>
@@ -122,9 +144,18 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem}
   <h2>Let's talk</h2>
   <p>I can commit full-time and start as soon as you need me.</p>
   <a class="btn" href="https://wa.me/254702889103?text=Hi%20Tony%2C%20I%20saw%20your%20portfolio">WhatsApp +254 702 889 103</a>
-  <a class="btn alt" href="mailto:bentony424@gmail.com">bentony424@gmail.com</a>
+  <a class="btn alt mail" href="mailto:bentony424@gmail.com">bentony424@gmail.com</a>
 </section>
-<footer>Prepared for Jikoni Studio. Figures come from public pages and may have changed.</footer>
+<footer>Prepared for Jikoni Studio. Figures come from public pages and may have changed. This page counts anonymous visits, with no cookies.</footer>
 </div>
+<script>
+(function(){
+  if(/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)) return;
+  var url='https://mail.google.com/mail/?view=cm&fs=1&to=bentony424@gmail.com&su='+encodeURIComponent('Events & Social Media Manager');
+  document.querySelectorAll('a.mail').forEach(function(a){a.href=url;a.target='_blank';a.rel='noopener';});
+})();
+</script>
+<script data-goatcounter="https://bentony424-opsgithubio.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
